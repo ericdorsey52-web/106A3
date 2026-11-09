@@ -5,14 +5,10 @@
 //  Created by Eric Dorsey on 11/9/26.
 //
 
-import SwiftUI
+import Foundation
 
-struct Task: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
-
-#Preview {
-    Task()
+struct Task: Identifiable {
+    let id = UUID()
+    var title: String
+    var isDone: Bool = false
 }
